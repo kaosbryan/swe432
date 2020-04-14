@@ -50,6 +50,7 @@ public class a7 extends HttpServlet{
                 toClient.println("  <tr>");
                 toClient.println("    <td style=\"width: 20%\" width=\"20%\">&nbsp;</td>");
                 toClient.println("    <td>" + values[i] + "</td></tr>");
+                }
             }
         }
     }
