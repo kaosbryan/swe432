@@ -49,7 +49,8 @@ public class a7 extends HttpServlet{
                     {
                     out.print("  <tr>");
                     out.print("    <td style=\"width: 20%\" width=\"20%\">&nbsp;</td>");
-                    out.print("    <td>" + values[i] + "</td></tr>\n");
+                    out.print("    <td>" + values[i] + "</td></tr>");
+                    out.print("\n");
                     }
                 }
             }
