@@ -1,5 +1,7 @@
 package servlet;
-
+import java.io.*;
+import java.util.*;
+import java.lang.*;
 import java.io.PrintWriter;
 import java.io.IOException;
 
@@ -18,8 +20,8 @@ public class a7 extends HttpServlet{
   @Override
    protected void doPost (HttpServletRequest req, HttpServletResponse res)
           throws ServletException, IOException{
-        Enumeration paraNames = request.getParameterNames();
-        PrintWriter out = response.getWriter();
+        Enumeration paraNames = req.getParameterNames();
+        PrintWriter out = res.getWriter();
         String element = "";
 		out.print("<html>\n<head>\n\n");
 		out.print("<title>SWE 432 Bryan Zheng</title>\n");
