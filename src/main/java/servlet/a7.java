@@ -29,8 +29,9 @@ public class a7 extends HttpServlet{
 		out.print("<body>\n");
 		out.print("<center><h2>Bryan Zheng  ------- Bathroom Review Form</h2></center>\n");
 		out.print("<hr>\n");
-		while (paraNames.hasMoreElements())
+		while (paraNames.hasMoreElements()) {
 		    element = (String)paraNames.nextElement();
 		    out.print(element);
+		}
     }
 }
