@@ -29,9 +29,29 @@ public class a7 extends HttpServlet{
 		out.print("<body>\n");
 		out.print("<center><h2>Bryan Zheng  ------- Bathroom Review Form</h2></center>\n");
 		out.print("<hr>\n");
-		while (paraNames.hasMoreElements()) {
-		    element = (String)paraNames.nextElement();
-		    out.print(element);
-		}
+		while (paraNames.hasMoreElements()) {  
+        para = (String)paraNames.nextElement();
+        if (!para.equalsIgnoreCase("submit"))
+        {
+         toClient.println("  <tr>");
+         toClient.println("    <td style=\"width: 20%\" width=\"20%\"><b>" + para + "</b></td>");
+
+         String[] values = request.getParameterValues(para);
+
+         if (values != null && !values[0].equals(""))
+            toClient.println("    <td>" + values[0] + "</td></tr>");
+         else
+            toClient.println("    <td>&nbsp;</td></tr>");
+
+         for (int i = 1; i < values.length; i++)
+         {
+            if (!values[i].equals(""))
+            {
+               toClient.println("  <tr>");
+               toClient.println("    <td style=\"width: 20%\" width=\"20%\">&nbsp;</td>");
+               toClient.println("    <td>" + values[i] + "</td></tr>");
+            }
+         }
+      }
     }
 }
