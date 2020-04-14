@@ -18,6 +18,7 @@ public class a7 extends HttpServlet{
   @Override
    protected void doPost (HttpServletRequest req, HttpServletResponse res)
           throws ServletException, IOException{
+        Enumeration paraNames = request.getParameterNames();
         PrintWriter out = response.getWriter();
         String element = "";
 		out.print("<html>\n<head>\n\n");
@@ -27,7 +28,6 @@ public class a7 extends HttpServlet{
 		out.print("<center><h2>Bryan Zheng  ------- Bathroom Review Form</h2></center>\n");
 		out.print("<hr>\n");
 		while (paraNames.hasMoreElements())
-		    Enumeration paraNames = request.getParameterNames();
 		    element = (String)paraNames.nextElement();
 		    out.print(element)
     }
