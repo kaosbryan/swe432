@@ -29,6 +29,6 @@ public class a7 extends HttpServlet{
 		out.print("<hr>\n");
 		while (paraNames.hasMoreElements())
 		    element = (String)paraNames.nextElement();
-		    out.print(element)
+		    out.print(element);
     }
 }
