@@ -22,7 +22,7 @@ public class a7 extends HttpServlet{
           throws ServletException, IOException{
         Enumeration paraNames = req.getParameterNames();
         PrintWriter out = res.getWriter();
-        String element = "";
+        String para = "";
         out.print("<html>\n<head>\n\n");
         out.print("<title>SWE 432 Bryan Zheng</title>\n");
         out.print("</head>\n");
@@ -36,7 +36,7 @@ public class a7 extends HttpServlet{
                 out.print("  <tr>");
                 out.print("    <td style=\"width: 20%\" width=\"20%\"><b>" + para + "</b></td>");
 
-                String[] values = request.getParameterValues(para);
+                String[] values = req.getParameterValues(para);
 
                 if (values != null && !values[0].equals(""))
                 out.print("    <td>" + values[0] + "</td></tr>");
