@@ -161,7 +161,7 @@ public class persistenceFile extends HttpServlet{
      out.println("  <tr>");
      out.println("   <td>UserId:</td>");
      out.println("   <td><input type=\"text\" name=\""+Data.USERID.name()
-      +"\" value=\""+name+"\" size=30 required></td>");
+      +"\" value=\""+userId+"\" size=30 required></td>");
      out.println("  </tr>");  
      out.println(" </table>");
      out.println(" <br>");
@@ -189,6 +189,7 @@ public class persistenceFile extends HttpServlet{
         out.println("  <tr>");
         out.println("   <th>Name</th>");
         out.println("   <th>Age</th>");
+        out.println("   <th>UserId</th>");
         out.println("  </tr>");
         File file = new File(resourcePath);
         if(!file.exists()){
