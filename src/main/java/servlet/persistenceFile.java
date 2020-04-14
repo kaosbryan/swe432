@@ -82,7 +82,7 @@ public class persistenceFile extends HttpServlet{
 
      if (error.length() == 0){
        PrintWriter entriesPrintWriter = new PrintWriter(new FileWriter(RESOURCE_FILE, true), true);
-       entriesPrintWriter.println(name+VALUE_SEPARATOR+age);
+       entriesPrintWriter.println(name+VALUE_SEPARATOR+age+VALUE_SEPARATOR+userId);
        entriesPrintWriter.close();
 
        PrintHead(out);
@@ -90,7 +90,7 @@ public class persistenceFile extends HttpServlet{
        PrintTail(out);
      }else{
        PrintHead(out);
-       PrintBody(out, name, age, error);
+       PrintBody(out, name, age, userId, error);
        PrintTail(out);
      }
   }
