@@ -354,7 +354,7 @@ public class Assignment8 extends HttpServlet {
 		out.println("<hr/>");
 		out.println("<center>");
 		out.println("<h1 align=\"center\">Bathroom Review form</h1>");
-		out.println("<form method=\"post\" action=\" Assignment6\" name=\"RegisterForm\" onSubmit=\"return (CheckRegistration())\">");
+		out.println("<form method=\"post\" action=\" Assignment8\" name=\"RegisterForm\" onSubmit=\"return (CheckRegistration())\">");
 		out.println("<table>");
 		     
 		out.println("<tr>");
