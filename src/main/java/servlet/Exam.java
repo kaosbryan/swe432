@@ -11,8 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.annotation.WebServlet;
 
 
-@WebServlet(name = "finalExam", urlPatterns = "/finalExam")
-public class finalExam extends HttpServlet {
+@WebServlet(name = "Exam", urlPatterns = "/Exam")
+public class Exam extends HttpServlet {
 		
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
