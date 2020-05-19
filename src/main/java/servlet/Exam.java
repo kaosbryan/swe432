@@ -121,7 +121,7 @@ public class Exam extends HttpServlet {
 		out.println("<hr/>");
 		out.println("<center>");
 		out.println("<h1 align=\"center\">Final Exam</h1>");
-		out.println("<form method=\"post\" action=\" finalExam\" name=\"RegisterForm\" onSubmit=\"return (CheckRegistration())\">");
+		out.println("<form method=\"post\" action=\" Exam\" name=\"RegisterForm\" onSubmit=\"return (CheckRegistration())\">");
 		out.println("<table>");
 		     
 		out.println("<tr>");
